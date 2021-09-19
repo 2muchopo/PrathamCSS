@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Umbrella</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: red;
+        }
+        .container {
+            background-color: #fff;
+            height: 300px;
+            width: 400px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .semi-circle1 {
+            background-color: red;
+            width: 300px;
+            height: 150px;
+            border-radius: 150px 150px 0 0 / 150px 150px 0 0;
+            position: absolute;
+            top: 10px;
+            left: 50px;
+        }
+        .semi-circle2 {
+            background-color: whitesmoke;
+            width: 240px;
+            height: 150px;
+            border-radius: 120px 120px 0 0 / 150px 150px 0 0;
+            position: absolute;
+            top: 10px;
+            left: 80px;
+        }
+        .semi-circle3 {
+            background-color: red;
+            width: 180px;
+            height: 150px;
+            border-radius: 90px 90px 0 0 / 150px 150px 0 0;
+            position: absolute;
+            top: 10px;
+            left: 110px;
+        }
+        .semi-circle4 {
+            background-color: whitesmoke;
+            width: 120px;
+            height: 150px;
+            border-radius: 60px 60px 0 0 / 150px 150px 0 0;
+            position: absolute;
+            top: 10px;
+            left: 140px;
+        }
+        .semi-circle5 {
+            background-color: red;
+            width: 60px;
+            height: 150px;
+            border-radius: 30px 30px 0 0 / 150px 150px 0 0;
+            position: absolute;
+            top: 10px;
+            left: 170px;
+            
+        }
+        .dot {
+            background-color: rgba(75, 75, 17, 0.795);
+            width: 10px;
+            height: 5px;
+            border-radius: 35%;
+            position: absolute;
+            top: 5px;
+            left: 195px;
+        }
+        .s1 {
+            background-color: white;
+            width: 60px;
+            height: 30px;
+            border-radius: 30px 30px 0 0 / 30px 30px 0 0;
+            position: absolute;
+            top: 140px;
+            left: 50px;
+        }
+
+        .s2 {
+            background-color: white;
+            width: 60px;
+            height: 30px;
+            border-radius: 30px 30px 0 0 / 30px 30px 0 0;
+            position: absolute;
+            top: 140px;
+            left: 110px;
+        }
+
+        .s3 {
+            background-color: white;
+            width: 60px;
+            height: 30px;
+            border-radius: 30px 30px 0 0 / 30px 30px 0 0;
+            position: absolute;
+            top: 140px;
+            left: 170px;
+        }
+        .s4 {
+            background-color: white;
+            width: 60px;
+            height: 30px;
+            border-radius: 30px 30px 0 0 / 30px 30px 0 0;
+            position: absolute;
+            top: 140px;
+            left: 230px;
+        }
+
+        .s5 {
+            background-color: white;
+            width: 60px;
+            height: 30px;
+            border-radius: 30px 30px 0 0 / 30px 30px 0 0;
+            position: absolute;
+            top: 140px;
+            left: 290px;
+        }
+        .handle {
+            background-color: rgba(75, 75, 17, 0.795);
+            width: 7.5px;
+            height: 120px;
+            position: absolute;
+            top: 140px;
+            left: 192.5px;
+        }
+        .handle2 {
+            background-color: rgba(102, 81, 41, 0.459);
+            width: 7.5px;
+            height: 120px;
+            position: absolute;
+            top: 140px;
+            left: 200px;
+        }
+        .curve {
+            background-color: transparent;
+            height: 20px;
+            width: 40px;
+            border-radius: 20px 20px 0 0 / 20px 20px 0 0;
+            border: 8px solid rgba(75, 75, 17, 0.795);
+            border-bottom: none;
+            transform: rotate(180deg);
+            position: absolute;
+            top: 260px;
+            left: 192px;
+        }
+
+        .curve2 {
+            background-color: transparent;
+            height: 13px;
+            width: 26px;
+            border-radius: 13px 13px 0 0 / 13px 13px 0 0;
+            border: 7.5px solid rgba(102, 81, 41, 0.459);
+            border-bottom: none;
+            transform: rotate(180deg);
+            position: absolute;
+            top: 260px;
+            left: 200.1px;
+        }
+        .final {
+            background-color: rgba(102, 81, 41, 0.459);
+            width: 7.5px;
+            height: 7.5px;
+            border-top-left-radius: 7.5px;
+            position: absolute;
+            top: 252.5px;
+            left: 219px;
+        }
+        .final2 {
+            background-color: rgba(75, 75, 17, 0.795);
+            width: 7.5px;
+            height: 7.5px;
+            border-top-right-radius: 7.5px;
+            position: absolute;
+            top: 252.5px;
+            left: 224.5px;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="semi-circle1"></div>
+            <div class="semi-circle2"></div>
+            <div class="semi-circle3"></div>
+            <div class="semi-circle4"></div>
+            <div class="semi-circle5"></div>
+            <div class="semi-circle6"></div>
+            <div class="s1"></div>
+            <div class="s2"></div>
+            <div class="s3"></div>
+            <div class="s4"></div>
+            <div class="s5"></div>
+            <div class="handle"></div>
+            <div class="handle2"></div>
+            <div class="dot"></div>
+            <div class="curve"></div>
+            <div class="curve2"></div>
+            <div class="final"></div>
+            <div class="final2"></div>
+
+        </div>
+
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
